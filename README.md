@@ -1,5 +1,5 @@
-# 一、前言
-毕业设计项目，2021年8月10日开始开发，8月23日基本完成。
+![屏幕截图 2024-11-19 191639](https://github.com/user-attachments/assets/fb26855e-416b-490e-9a2c-3ac0ca335e50)# 一、前言
+毕业设计项目，2024年7月23日开始开发，8月16日基本完成。
 
 # 二、项目介绍
 
@@ -21,13 +21,14 @@
 * 前端样式：<https://startbootstrap.com/template/sb-admin>
 
 ## 5.开发环境
-* IDE：IDEA 2021.2
+* IDE：IDEA 2024.2.3
 * JDK：1.8
 * 数据库：MySQL 8.0.25
 
 # 三、项目主要功能展示
 ## 登录页面
-![登录页面](https://i.loli.net/2021/08/24/KeErWTpAOBfG6uD.png)
+![登录页面]![屏幕截图 2024-11-19 191639](https://github.com/user-attachments/assets/f90301ba-02bc-4ee9-88bd-357581fb44c4)
+
 
 ## 管理员页面
 ![管理员主页](https://i.loli.net/2021/08/24/PvU7Ln2pKwxRCgG.png)
