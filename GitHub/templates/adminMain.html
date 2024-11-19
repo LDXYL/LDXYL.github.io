@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="adminCommon::common-header"></head>
+<body class="sb-nav-fixed">
+<nav th:replace="adminCommon::common-navbar"></nav>
+<div id="layoutSidenav">
+    <div th:replace="adminCommon::common-sidenav"></div>
+
+    <!--插入图片-->
+        <style>
+            body {
+                background-image: url('/img/background2.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        </style>
+
+    <style>
+        .card-custom-green {
+            background-color: #00baff;
+            color: white;
+        }
+    </style>
+
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-5">
+                <h1 class="mt-4 text-center">管理员主页</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item active">  </li>
+                    <li class="breadcrumb-item active">欢迎登录德华健身房管理系统</li>
+                </ol>
+                <div class="row">
+                    <!-- 左边四个模块 -->
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-10 col-md-6">
+                                <div class="card card-custom-green text-white mb-4">
+                                    <div class="card-body">健身房总人数</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white" th:text="${humanTotal} + '人'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-md-6">
+                                <div class="card card-custom-green text-white mb-4">
+                                    <div class="card-body">员工人数</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white" th:text="${employeeTotal} + '人'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-md-6">
+                                <div class="card card-custom-green text-white mb-4">
+                                    <div class="card-body">器材数</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white" th:text="${equipmentTotal} + '件'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-md-6">
+                                <div class="card card-custom-green text-white mb-4">
+                                    <div class="card-body">会员人数</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white" th:text="${memberTotal} + '人'"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                        <div class="col-xl-10 col-md-6">
+                                            <div class="card card-custom-green text-white mb-4">
+                                                <div class="card-body">会员人数</div>
+                                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                                    <span class="small text-white" th:text="${memberTotal} + '人'"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-10 col-md-6">
+                                    <div class="card card-custom-green text-white mb-4">
+                                        <div class="card-body">会员人数</div>
+                                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                            <span class="small text-white" th:text="${memberTotal} + '人'"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-md-6">
+                            <div class="card card-custom-green text-white mb-4">
+                                <div class="card-body">会员人数</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <span class="small text-white" th:text="${memberTotal} + '人'"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-md-6">
+                            <div class="card card-custom-green text-white mb-4">
+                                <div class="card-body">会员人数</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <span class="small text-white" th:text="${memberTotal} + '人'"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer th:replace="adminCommon::common-footer"></footer>
+    </div>
+</div>
+<div th:include="adminCommon::common-scripts"></div>
+</body>
+</html>
